@@ -1,0 +1,4 @@
+pandas
+configparser
+requests
+pandas_datareader
