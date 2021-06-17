@@ -1,4 +1,5 @@
 pandas
 configparser
 requests
+dotenv
 pandas_datareader

@@ -6,7 +6,7 @@ import configparser
 import os
 
 from datetime import datetime
-#from dotenv import load_dotenv, find_dotenv
+from dotenv import load_dotenv, find_dotenv
 
 
 from timeseries import TimeSeries
@@ -26,10 +26,11 @@ def main():
     #api_key = config.get("properties", "iex_secret_token")
 
 
-    api_key = config.get("properties", "av_api_access_key")
+    #api_key = config.get("properties", "av_api_access_key")
 
-    #load_dotenv(find_dotenv())
-    #api_key = os.environ.get('AV_API_ACCESS_KEY')
+    load_dotenv(find_dotenv())
+    api_key = os.environ.get('av_api_access_key')
+
     #symbol = config.get("properties", "symbol")
 
     parser = argparse.ArgumentParser(description="Time Series")
