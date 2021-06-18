@@ -14,6 +14,7 @@ from getstock import DownloadStock
 
 logger = logging.getLogger("Running Main Program.")
 
+# python3 main.py --fmt json --api av
 
 def main():
     prg_start_time = time.time()
@@ -24,8 +25,6 @@ def main():
 
     # Get all symbols [Stocks and ETFs]
     #api_key = config.get("properties", "iex_secret_token")
-
-
     #api_key = config.get("properties", "av_api_access_key")
 
     load_dotenv(find_dotenv())
