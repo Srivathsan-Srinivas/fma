@@ -11,7 +11,7 @@ install:
 
 # Scripts to be run such as tests
 before_script:
-  - echo "Travis is running!"
+  - echo "Travis is running! Hip Hip Hoorey"
 
 script:
   - docker --version # print the version for logging
