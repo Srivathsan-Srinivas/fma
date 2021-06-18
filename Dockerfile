@@ -6,9 +6,9 @@ ENV PYTHONUNBUFFERED 1
 
 RUN pip3 install --upgrade pip
 
-RUN mkdir -p /app/
-RUN mkdir -p /app/output/
-RUN mkdir -p /app/logs/
+RUN mkdir -p /app/ \
+    && mkdir -p /app/output/ \
+    && mkdir -p /app/logs/
 
 copy src/ /app/src
 RUN pip3 install -r ./app/src/requirements.txt
